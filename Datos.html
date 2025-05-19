@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Pedidos</title>
+</head>
+<body>
+    <form id="orderForm" action="procesar_pedido.php" method="post">
+        <h1>Detalles del Pedido</h1>
+        
+        <div class="form-group">
+            <label for="producto">Producto:</label>
+            <input type="text" id="producto" name="producto" required>
+        </div>
+
+        <div class="form-group">
+            <label for="medidas">Medidas:</label>
+            <input type="text" id="medidas" name="medidas" required>
+        </div>
+
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" required>
+        </div>
+
+        <div class="form-group">
+            <label for="agarradera">Tipo de Agarradera o Estilo:</label>
+            <input type="text" id="agarradera" name="agarradera" required>
+        </div>
+
+        <div class="form-group">
+            <label for="vidrio">Tipo de Vidrio o Aluminio:</label>
+            <input type="text" id="vidrio" name="vidrio" required>
+        </div>
+
+        <div class="form-group">
+            <label for="detalles">Tipo de Detalles a Agregar:</label>
+            <input type="text" id="detalles" name="detalles" required>
+        </div>
+
+        <div class="form-group">
+            <label for="especificaciones">Especificaciones:</label>
+            <textarea id="especificaciones" name="especificaciones" rows="4" required></textarea>
+        </div>
+
+        <h2>Información de comprador</h2>
+        
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pedido">Pedido:</label>
+            <input type="text" id="pedido" name="pedido" required>
+        </div>
+
+        <div class="form-group">
+            <label for="anticipo">Anticipo:</label>
+            <input type="number" id="anticipo" name="anticipo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha_entrega">Fecha de Entrega:</label>
+            <input type="date" id="fecha_entrega" name="fecha_entrega" required>
+        </div>
+
+        <div class="form-group">
+            <label for="direccion">Dirección para llevar el pedido:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div class="form-group">
+            <label for="especificaciones_llegada">Especificaciones para llegar:</label>
+            <textarea id="especificaciones_llegada" name="especificaciones_llegada" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="hora_entrega">Hora en que será entregado:</label>
+            <input type="time" id="hora_entrega" name="hora_entrega" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Enviar Pedido">
+        </div>
+    </form>
+
+    <div class="notification" id="notification">
+        <h3>¡Gracias por su compra!</h3>
+        <p>Su pedido ha sido recibido. Pronto llegara a su domicilio</p>
+    </div>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var notification = document.getElementById('notification');
+            notification.style.display = 'block';
+            setTimeout(function() {
+                notification.style.display = 'none';
+            }, 5000);
+            this.reset();
+        });
+    </script>
+    <button class="floating-button" onclick="window.location.href='principal.html'">🏠</button>
+</body>
+</html>

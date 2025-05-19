@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Materiales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+         .floating-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .floating-button:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(imagenes/fondo\ madera.webp); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 15px;
+            color: white;
+            padding: 20px;
+            animation: fadeIn 3s;
+        }
+        h2 {
+            color: beige;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+            animation: fadeIn 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Nuestros principales productos y los materiales con los que son hechos</h2>
+        <ol>
+            <li>Ventana de aluminio
+                <ul>
+                    <li>Riel</li>
+                    <li>Janva</li>
+                    <li>Traslape</li>
+                    <li>Cerco</li>
+                    <li>Soclo</li>
+                    <li>Solera</li>
+                    <li>Mosquetera</li>
+                    <li>vidrio</li>
+                    <li>Llantas</li>
+                    <li>Vinil</li>
+                    <li>Jaladeras</li>
+                    <li>Tornillos</li>
+                    <li>Remaches</li>
+                </ul>
+            </li>
+            <li>Puerta de Aluminio
+                <ul>
+                    <li>Vidrio</li>
+                    <li>Vatinete</li>
+                    <li>Cerca de 3 pulgadas</li>
+                    <li>Soclo de 2 pulgadas</li>
+                    <li>Socio de una vena</li>
+                    <li>Intermedio</li>
+                    <li>Duela</li>
+                    <li>Tornillos</li>
+                    <li>Vinil</li>
+                    <li>Crapa</li>
+                    <li>Felpa</li>
+                    <li>Remaches</li>
+                    <li>Vizagra</li>
+                </ul>
+            </li>
+            <li>Puerta de Madera
+                <ul>
+                    <li>Cerca</li>
+                    <li>Choclo</li>
+                    <li>Intermedio</li>
+                    <li>Madera</li>
+                    <li>Pintura</li>
+                    <li>Chapa Perilla bola</li>
+                    <li>Tornillos</li>
+                </ul>
+            </li>
+            <li>Cancel
+                <ul>
+                    <li>Mica o Acrilico</li>
+                    <li>Moldura</li>
+                    <li>Jamba</li>
+                    <li>Guia</li>
+                    <li>Vinil</li>
+                    <li>Llantas</li>
+                    <li>Jaladera Trompa de Elefante</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <button class="floating-button" onclick="window.location.href='principal.html'">🏠</button>
+</body>
+</html>

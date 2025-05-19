@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .floating-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .floating-button:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("imagenes/fondo madera.webp");
+            background-size: cover;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        img {
+            max-width: 250px;
+            height: auto;
+            background-color: transparent;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Nuestros servicios</h2>
+    <h3>Ofrecemos una amplia gama de servicios para satisfacer todas sus necesidades de carpintería y aluminio.</h3>
+
+    <table>
+        <tr>
+            <td>
+                <img src="imagenes/PuertaAluminio.jpg" alt="Puertas de aluminio">
+                <p>Puertas de aluminio</p>
+            </td>
+            <td>
+                <img src="imagenes/PuertaMad.jpg" alt="Puertas de madera">
+                <p>Puertas de madera</p>
+            </td>
+            <td>
+                <img src="imagenes/Buro.jpg" alt="Buros chicos">
+                <p>Buros chicos</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="imagenes/buroMad.png" alt="Muebles con cajones">
+                <p>Muebles con cajones</p>
+            </td>
+            <td>
+                <img src="imagenes/Regadera de Aluminio.jpg" alt="Cubre regaderas">
+                <p>Cubre regaderas</p>
+            </td>
+            <td>
+                <img src="imagenes/Aluminio.jpg" alt="Ventanas con todo tipo de aluminio">
+                <p>Ventanas con todo tipo de aluminio</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <img src="imagenes/Fondo2.jpg" alt="Diferentes diseños de ventanas">
+                <p>Diferentes diseños de ventanas</p>
+            </td>
+        </tr>
+    </table>
+    <button class="floating-button" onclick="window.location.href='principal.html'">🏠</button>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style2.css" >
+   <style>
+        .error-border {
+            border: 1px solid red;
+        }
+   </style>
+   </head>
+
+<body>
+    <form action="principal.html">
+        <img src="imagenes/Logoooo.png" alt="">
+        <div class="input-group">
+
+            <div class="input-container">
+                <input type="text" placeholder="Nombre" class="error-border" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-container">
+                <input type="password" placeholder="Contraseña" class="error-border" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="input-container">
+                <input type="email" placeholder="Correo" class="error-border" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-container">
+                <input type="tel" placeholder="Telefono" class="error-border" required>
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <a href="index.html">Ya Tienes Cuenta Iniciar Sesion?</a>
+
+            <input class="btn" type="submit" value="Registrar" >
+
+        </div>
+    </form>
+</body>
+
+</html>
